@@ -12,7 +12,7 @@ async def clear(days, client, interaction, user):
     total = 0
     finished = False
     
-    await interaction.response.send_message(f'Clearing {interaction.user}\'s messages. This may take a while...')
+    await interaction.response.send_message(f'Clearing {user}\'s messages. This may take a while...')
     
     while not finished:
         messages = [message async for message in channel.history(limit=100,before=last)]
@@ -24,7 +24,7 @@ async def clear(days, client, interaction, user):
         last = messages[-1].created_at
         print(f'Deleted {total} messages')
     
-    await channel.send(f'Deleted {total} message(s) from user {interaction.user}')
+    await channel.send(f'Deleted {total} message(s) from user {user}')
     
 async def clear_all(client, interaction):
     channel = client.get_channel(interaction.channel_id)
@@ -44,4 +44,4 @@ async def clear_all(client, interaction):
         last = messages[-1].created_at
         print(f'Deleted {total} messages')
     
-    await channel.send(f'Deleted {total} message(s) from user channel.')
+    await channel.send(f'Deleted {total} message(s) from channel.')
