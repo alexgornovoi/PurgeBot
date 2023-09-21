@@ -1,7 +1,5 @@
 import discord
 import os
-import datetime
-import time
 from dotenv import load_dotenv
 from discord import app_commands
 import utils
@@ -38,8 +36,5 @@ async def clear_bot(interaction):
 @tree.command(name = "clear_all", description = "Clears all messages from all users.", guild=discord.Object(id=guildId)) 
 async def clear_bot(interaction):
     await utils.clear_all(client, interaction)
-
-    
-
 
 client.run(os.getenv('token'))
