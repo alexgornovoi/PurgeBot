@@ -14,19 +14,19 @@ Incogbot is a discord bot made using [discord.py](https://discordpy.readthedocs.
 
 ## Running The Bot Locally
 
-1. Clone the project
+1. Clone the project.
 
 ```bash
   git clone https://github.com/alexgornovoi/incogbot
 ```
 
-2. Go to the project directory
+2. Go to the project directory.
 
 ```bash
   cd incogbot
 ```
 
-3. Install discord.py library and python-dotenv
+3. Install discord.py library and python-dotenv.
 
 ```bash
   pip install -U discord.py
