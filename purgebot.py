@@ -19,7 +19,7 @@ async def on_ready():
     print("Ready!")
 
         
-@tree.command(name = "incogbot", description = "Test that incogbot is listening.", guild=discord.Object(id=guildId))
+@tree.command(name = "purgebot", description = "Test that PurgeBot is listening.", guild=discord.Object(id=guildId))
 async def first_command(interaction):
     await interaction.response.send_message("Hello!")
 
@@ -29,7 +29,7 @@ async def first_command(interaction):
 async def clear(interaction, days:int):
     await utils.clear(days, client, interaction, interaction.user)
 
-@tree.command(name = "clear_bot", description = "Clears all IncogBots messages.", guild=discord.Object(id=guildId)) 
+@tree.command(name = "clear_bot", description = "Clears all PurgeBots messages.", guild=discord.Object(id=guildId)) 
 async def clear_bot(interaction):
     await utils.clear(0, client, interaction, client.user)
     

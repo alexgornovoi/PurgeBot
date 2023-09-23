@@ -1,6 +1,6 @@
-# IncogBot
+# PurgeBot
 
-IncogBot is a discord bot made using [discord.py](https://discordpy.readthedocs.io/en/stable/) library. In order to avoid rate limits it is recommended that you create your own version of this bot.
+PurgeBot is a discord bot made using [discord.py](https://discordpy.readthedocs.io/en/stable/) library. In order to avoid rate limits it is recommended that you create your own version of this bot.
 
 ## Creating The Application
 1. Visit [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.
@@ -17,13 +17,13 @@ IncogBot is a discord bot made using [discord.py](https://discordpy.readthedocs.
 1. Clone the project.
 
 ```bash
-  git clone https://github.com/alexgornovoi/incogbot
+  git clone https://github.com/alexgornovoi/purgebot
 ```
 
 2. Go to the project directory.
 
 ```bash
-  cd incogbot
+  cd purgebot
 ```
 
 3. Install discord.py library and python-dotenv.
@@ -43,9 +43,9 @@ guildId = 123456789
 Where token is the bot token you saved from before and guilId is the [Server ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-#:~:text=Obtaining%20Server%20IDs%20%2D%20Mobile%20App,ID%20to%20get%20the%20ID) where you added the bot.  
 :warning: **Do not share your .env or any information inside it**: Be very careful here!
 
-5. Next start the bot. To check that it is working you can do "/incogbot" to check if there bot has started.
+5. Next start the bot. To check that it is working you can do "/purgebot" to check if there bot has started.
 ```bash
-  python3 incogbot.py
+  python3 purgebot.py
 ```
 ## Usage
 
@@ -55,7 +55,7 @@ This command will clear all messages in the channel it was sent in.
 ### /clear {days}
 This command will clear all messages from before the inputted amount of days **for only the user that sent the command**.
 ### /clear_bot
-This command will clear all of incogbot sent messages. (This is useful for cleaning channels where the bot may be used alot.
+This command will clear all of PurgeBots messages. (This is useful for cleaning channels where the bot may be used alot.
 
 ## Contributing
 
