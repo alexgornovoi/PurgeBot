@@ -43,7 +43,7 @@ guildId = 123456789
 Where token is the bot token you saved from before and guilId is the [Server ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-#:~:text=Obtaining%20Server%20IDs%20%2D%20Mobile%20App,ID%20to%20get%20the%20ID) where you added the bot.  
 :warning: **Do not share your .env or any information inside it**: Be very careful here!
 
-5. Next start the bot. To check that it is working you can do "/incogbot" to check if there bot has started.
+5. Next start the bot. To check that it is working you can do "/purgebot" to check if there bot has started.
 ```bash
   python3 incogbot.py
 ```
