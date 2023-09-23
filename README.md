@@ -1,4 +1,4 @@
-# Incogbot
+# IncogBot
 
 Incogbot is a discord bot made using [discord.py](https://discordpy.readthedocs.io/en/stable/) library. In order to avoid rate limits it is recommended that you create your own version of this bot.
 
